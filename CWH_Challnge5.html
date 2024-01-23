@@ -1,141 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Challenge 5</title>
 
     <style>
-        *{
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        body
-        {
-          
+        
+        body {
+            
             overflow-x: hidden;
+            
+            
         }
-        header
-        {
-
-            position: sticky;
-           z-index: 100;
-            top: 0;
-        }
-        nav
-        {
+        
+        main {
+            
             width: 100vw;
+            min-height: 100vh;
+            background-color: blanchedalmond;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            
+        }
+        header {
+            
+            position: sticky;
+            z-index: 100;
+            top: 0;
+            
+        }
+        
+        nav {
+            width: 100vw;
+            
             background-color: rgb(125, 146, 146);
             color: rgb(255, 255, 255);
             font-family: Arial, Helvetica, sans-serif;
             font-size: 20px;
-           
+            
+            
+            
+            
         }
-       nav  ul
-        { 
+        
+        nav ul {
             display: flex;
-      
+            
+            
         }
+        
         ul li {
-         list-style: none;
-         padding: 20px 30px;
+            list-style: none;
+            padding: 20px 30px;
+            
+        }
+        
+        
+        
+        
+        
+        
+        main>.left {
+            
+            display: flex;
+            justify-content: left;
+            border-radius: 20px;
+            width: 45vw;
+            height: 500px;
+            background-color: blueviolet;
+            margin: 20px;
+            border: 4px solid rgb(0, 0, 0);
+        }
+        
+        main>.right {
+            border: 4px solid rgb(0, 0, 0);
+            display: flex;
+            justify-content: right;
+            width: 45vw;
+            height: 500px;
+            background-color: rgb(104, 100, 107);
+            margin: 20px;
+            border-radius: 20px;
         }
 
-        main
-        {
-            width: 100vw;
-            height: 80vh;
-            background-color: blanchedalmond;
+
+        .foot {
             display: flex;
             justify-content: center;
-           
-        }
-        main > .left
-        {
-         float: left;
-         width: 40vw;
-         height: 500px;
-         background-color: blueviolet;
-         margin:  20px;
-        } 
-        main > .right
-        {
-        float: right;
-         width: 40vw;
-         height: 500px;
-         background-color: rgb(104, 100, 107);
-         margin: 20px;
-        }
-        footer
-        {
+            align-items: center;
             width: 100vw;
-            height: 10vh;
+            min-height: 100px;
             background-color: green;
             color: aliceblue;
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 20px;
-            text-align: center;
-            padding-top: 20px;
-        }
-     
+
+             
+        } 
+
 
         .logo {
             color: rgb(255, 255, 255);
             font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             font-size: 20px;
-            padding: 10px; /* Reduced padding */
+            padding: 10px;
             border: 2px solid white;
             border-radius: 100%;
             background-color: rgb(39, 157, 181);
             position: fixed;
             z-index: 100;
             width: 150px;
+            right: 20px;
             bottom: 20px;
-            right: 20px; /* Adjusted right property */
             text-align: center;
         }
-        
-        
-        .last
-        {
+
+
+        .last {
             width: 100vw;
-            height: 100px;
+            min-height: 100px;
             background-color: blueviolet;
+        }
+
+        @media screen and (max-width:1000px) {
+            main > .left, main>.right
+            {
+                width: 90%;
+                height: 400px;
+                float: none;
+                background-color: rgb(207, 59, 59);
+                border-radius: 20px;
+            }
+            main > .right
+            {
+                background-color: orange;
+            }
+         
+
+
         }
     </style>
 </head>
+
 <body>
 
 
-      <header>
-          <nav>
-              
-              <ul>
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Select</li>
-                </ul>
-            </nav>
-            
-        </header>
-        <main>
-            <div class="left">
-               
-            </div>
-            <div class="right">
-               
-            </div>
-        </main>
-        <footer>
-            Welcome to my website layout.
-        </footer>
-    <div class="logo">
-        RAM
-    </div>
-    <div class="last">
-        
+    <main>
+    <header>
+        <nav>
+
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Select</li>
+            </ul>
+        </nav>
+
+    </header>
+        <div class="left">
+
+        </div>
+        <div class="right">
+
+        </div>
+     
+            <div class="foot">
     
-</div>
+                Welcome to my website layout.
+            </div>
+       
+        <div class="logo">
+            RAM
+        </div>
+        <div class="last"> </div>
+    </main>
 </body>
+
 </html>
